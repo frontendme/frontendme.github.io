@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>JS error tracker</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<button onclick="ReferenceErrorTest();">ReferenceError</button>
+		<button onclick="TypeErrorTest();">TypeErrorTest</button>
+		<button onclick="RangeErrorTest();">RangeErrorTest</button>
+		<button onclick="EvalErrorTest();">EvalErrorTest</button>
+		<button onclick="SyntaxErrorTest();">SyntaxErrorTest</button>
+		<br />
+		<textarea name="data" id="errorData" cols="30" rows="10"></textarea>
+	</div>
+	<br />
+	<table id="table1" border="1">
+		<thead>
+			<tr>
+				<th>Message</th>
+				<th>Filename</th>
+				<th>Line</th>
+				<th>Column</th>
+				<th>Type</th>
+				<th>Stack</th>
+				<th>TimeStamp</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	<script src="scripts.js"></script>
+
+</body>
+</html>
